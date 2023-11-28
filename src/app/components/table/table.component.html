@@ -1,0 +1,182 @@
+<section>
+    <div class="flex  justify-content-between">
+        <!--search input -->
+        <div class="searchPart flex flex-wrap justify-content-center ">
+            <h4>مبيعات التذاكر</h4>
+            <div>
+                <span class="p-input-icon-left relative">
+          <i class="pi pi-search absulote"></i>
+
+          <input
+            type="text"
+            pInputText
+            [(ngModel)]="value"
+            placeholder="ابحث عن"
+          />
+        </span>
+            </div>
+            <button><img src="/assets/images/setting-4.svg" alt="settings" /></button>
+            <button><img src="/assets/images/arrow-3.svg" alt="settings" /></button>
+        </div>
+        <div class="toggleSection flex">
+
+            <input type="checkbox" id="switch" class="checkbox" />
+            <label for="switch" class="toggle">
+              <p></p>
+             </label>
+            <span>مفعلة</span>
+
+            <button>حجز تذكرة جديدة</button>
+
+        </div>
+    </div>
+
+
+    <!------------Table--------->
+    <div>
+        <div class="tableDiv">
+            <table class="relative">
+                <div class="headBack absolute top-0"></div>
+
+                <tr>
+                    <th>#</th>
+                    <th>المستخدم</th>
+                    <th>رقم التذكرة</th>
+                    <th>
+                        قيمى التذكرة
+                        <img src=" /assets/images/arrow-3.svg " />
+                    </th>
+                    <th>السينمات</th>
+                    <th>عدد الأشخاص</th>
+                    <th>عدد مرات الشراء</th>
+                    <th>التذكرة</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td class="flex">
+                        <div class="relative userPic">
+                            <img src="/assets/images/user1.svg " alt="أحمد محمود " />
+                            <p class="absolute">Ma</p>
+                        </div>
+                        <div>أحمد محمود<br /><span class="phone">0123456789</span></div>
+                    </td>
+                    <td>C-101</td>
+                    <td>$40</td>
+                    <td class="relative cinemasName">
+                        سينما مصر, العرب, برج الأطنان,سرايا القبة...
+                        <div class="tooltip absolute">
+                            <div>
+                                <p>صيدناوي مول , برج العرب</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>1</td>
+                    <td>مرة واحدة</td>
+                    <td class="flex justify-content-between">
+                        <span class="ticket"><img src="/assets/images/ticket-2.svg "
+            /></span>
+                        <div class="ticketFile">
+                            تذكرة رقم 45 .pdf
+                            <p>9mb . PDF</p>
+                        </div>
+                        <img src="/assets/images/Group1000010390.svg " class="downloadIcon" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class="flex">
+                        <div class="relative userPic">
+                            <img src="/assets/images/user2.png " alt="محمد الغريب " />
+                        </div>
+                        <div>أحمد محمود<br /><span class="phone">0123456789</span></div>
+                    </td>
+                    <td>C-102</td>
+                    <td>$40</td>
+                    <td>سينما مصر, العرب, برج الأطنان,سرايا القبة</td>
+                    <td>1</td>
+                    <td>مرة واحدة</td>
+                    <td class="flex justify-content-between">
+                        <span class="ticket"><img src="/assets/images/ticket-2.svg "
+            /></span>
+                        <div class="ticketFile">
+                            تذكرة رقم 45 .pdf
+                            <p>9mb . PDF</p>
+                        </div>
+                        <img src="/assets/images/Group1000010390.svg " class="downloadIcon" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td class="flex">
+                        <div class="relative userPic">
+                            <img src="/assets/images/user3.png " alt="محمد الغريب " />
+                        </div>
+                        <div>أحمد محمود<br /><span class="phone">0123456789</span></div>
+                    </td>
+                    <td>C-102</td>
+                    <td>$40</td>
+                    <td>سينما مصر, العرب, برج الأطنان,سرايا القبة</td>
+                    <td>1</td>
+                    <td>مرة واحدة</td>
+                    <td class="flex justify-content-between">
+                        <span class="ticket"><img src="/assets/images/ticket-2.svg "
+            /></span>
+                        <div class="ticketFile">
+                            تذكرة رقم 45 .pdf
+                            <p>9mb . PDF</p>
+                        </div>
+                        <img src="/assets/images/Group1000010390.svg " class="downloadIcon" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td class="flex">
+                        <div class="relative userPic">
+                            <img src="/assets/images/user4.svg " alt="محمد الغريب " />
+                            <p class="absolute">Ma</p>
+                        </div>
+                        <div>أحمد محمود<br /><span class="phone">0123456789</span></div>
+                    </td>
+                    <td>C-103</td>
+                    <td>$40</td>
+                    <td>سينما مصر, العرب, برج الأطنان,سرايا القبة</td>
+                    <td>1</td>
+                    <td>مرة واحدة</td>
+                    <td class="flex justify-content-around">
+                        <span class="ticket"><img src="/assets/images/ticket-2.svg "/></span>
+                        <div class="ticketFile">
+                            تذكرة رقم 45 .pdf
+                            <p>9mb . PDF</p>
+                        </div>
+                        <img src="/assets/images/Group1000010390.svg " class="downloadIcon" />
+                    </td>
+                </tr>
+                <tfoot>
+                    <tr>
+                        <td colspan="8" class="relative">
+                            <div class="tableFooter absolute flex justify-content-between">
+                                <div>
+                                    عرض
+                                    <select>
+                    <option value=" 20 ">20</option>
+                  </select> من أصل 250
+                                </div>
+                                <div>
+                                    <ul>
+                                        <li><img src="/assets/images/arrows.svg " /></li>
+                                        <li>1</li>
+                                        <li>2</li>
+                                        <li>3</li>
+                                        <li>4</li>
+                                        <li>5</li>
+                                        <li><img src="/assets/images/arrows (1).svg " /></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,51 @@
+.btns {
+    align-items: center;
+}
+
+.editBtn a {
+    text-decoration: none;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    color: #1C1C28;
+    padding: 8px 8px 8px 11px;
+    background-color: #F9F9F9;
+    border: 1px #E9EAEA solid;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+
+.editBtn a:hover {
+    background-color: #C4C4C4;
+    color: #fff;
+    padding: 6px;
+}
+
+.backArrow button {
+    padding: 9px;
+    border: none;
+    border-radius: 8px;
+    background-color: #E7EAED;
+}
+
+.backArrow button:hover {
+    background-color: #c1c5c8;
+    cursor: pointer;
+}
+
+.backArrow p {
+    font-weight: 500;
+    margin-inline-start: 7px;
+}
+
+@media (max-width:1000px) {
+    app-chart,
+    app-card {
+        margin: auto;
+    }
+}

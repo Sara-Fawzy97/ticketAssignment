@@ -1,0 +1,31 @@
+<section dir="rtl">
+
+    <section class="card ">
+        <div class="flex justify-content-between">
+            <div>
+                <p>إحصائيات إستخدام القسيمة</p>
+                <p style="color:#99A1B7">05 يوليو , 2023 - 05 أغسطس , 2023</p>
+            </div>
+            <select>
+            <option value="سنويا">سنويا</option>
+            <option value="شهريا">شهريا</option>     
+        </select>
+        </div>
+        <div>
+            <div class="chart relative">
+                <p-chart #myChart id="myChart" type="line" [data]="basicData" [options]="options" height="226px"></p-chart>
+                <div>
+                    <img src="/assets/images/Indicative Element.svg" class="absolute chartPoint">
+                    <div class="tooltip absolute">
+                        <div>
+                            <p>250 إستخدام</p>
+                            <p><img src="/assets/images/Growth Indicator.svg">1.3% </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</section>

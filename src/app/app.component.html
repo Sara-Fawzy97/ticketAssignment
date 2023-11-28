@@ -1,42 +1,16 @@
-<p> {{firstName}}</p>
-
-<button [disabled]="btn"> </button>
-<img [src]="path">
-<router-outlet></router-outlet>
-<label for="txt">keyUp
-</label>
-<input id="txt" type="text" (keyup)="onKeyUp($event)">
-
-<button (click)="countDown($event)">click</button>
-<p>{{count}}</p>
-<input type="text" [(ngModel)]='value'>
-<p>{{value}}</p>
-
-<table class="table">
-    <thead>
-        <tr>
-            <th scope="col">#</th>
-            <th scope="col">movie</th>
-            <th scope="col">actor</th>
-            <th scope="col">year</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngfor=(let el of movie)>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-        </tr>
-    </tbody>
-</table>
-<input type="text" [(ngModel)]="num">
-<div [ngSwitch]="num">
-    <p *ngSwitchCase=1>One</p>
-    <p *ngSwitchCase=2>Two</p>
-    <p *ngSwitchCase=3>Three</p>
-    <p *ngSwitchCase=4>Four</p>
-    <p *ngSwitchDefault>Default</p>
+<div class="flex justify-content-between btns">
+    <div class="backArrow">
+        <button><img src="/assets/images/arrow-right.svg"></button>
+        <p class='inline'>تذكرة رقم #2342</p>
+    </div>
+    <div class="editBtn">
+        <a href='#'>
+            <img src='/assets/images/edit.svg'> <span>تعديل</span></a>
+    </div>
 </div>
-<input type="checkbox" *ngIf='val; else block'>
-<ng-template #block>Hiiiiiiii</ng-template>
+<div class="grid  column-gap-2 ">
+    <app-chart></app-chart>
+
+    <app-card></app-card>
+</div>
+<app-table></app-table>

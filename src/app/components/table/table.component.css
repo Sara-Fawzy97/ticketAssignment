@@ -1,0 +1,314 @@
+    .searchPart,
+    .toggleSection,
+    .flex {
+        align-items: center;
+    }
+    
+    section {
+        width: 100%
+    }
+    
+    .searchPart h4 {
+        font-weight: 400;
+    }
+    
+    .pi-search {
+        right: 10px;
+    }
+    
+    input {
+        height: 36px;
+        width: 277px;
+    }
+    
+    input::placeholder {
+        padding-right: 20px;
+    }
+    
+    .searchPart button {
+        width: 36px;
+        height: 36px;
+        border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
+        background-color: #fff;
+        border: 1px solid#92A1AD66;
+    }
+    /******toggle btn style****/
+    
+    .toggleSection button {
+        background: #8A74F9;
+        border: none;
+        padding: 13px 10px;
+        color: #fff;
+        border-radius: 6px;
+        font-size: 14px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
+    }
+    
+    .toggleSection button:hover {
+        background-color: #92A1AD;
+        cursor: pointer;
+    }
+    
+    .toggleSection span {
+        color: #9C9D9F;
+        font-size: 14px;
+        margin: 0 7px 0 20px;
+    }
+    
+    .toggle {
+        position: relative;
+        background-color: #8A74F9;
+        width: 34px;
+        height: 18px;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+    }
+    
+    .toggle:after {
+        position: absolute;
+        content: "";
+        height: 16px;
+        width: 17px;
+        left: 2px;
+        top: 1px;
+        background-color: #fff;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        transition: all 0.5s;
+    }
+    
+    input:checked+.toggle::after {
+        background-color: #3e3474;
+        left: 14px
+    }
+    
+    .checkbox {
+        display: none;
+    }
+    /*******table style******/
+    
+    .tableDiv {
+        overflow-x: auto;
+    }
+    
+    table {
+        /* overflow: scroll; */
+        display: block;
+        min-width: 50rem;
+        overflow-x: auto;
+        background-color: #fff;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+        border-collapse: collapse;
+    }
+    
+    table tr:first-of-type {
+        color: #ABAAB1
+    }
+    
+    .headBack {
+        width: 98.7%;
+        height: 41px;
+        margin: 7px 6px 7px 7px;
+        border-radius: 6px;
+        background-color: rgba(227, 228, 232, .3);
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
+    }
+    
+    th,
+    td {
+        text-align: center !important;
+        font-size: 13px;
+        width: 150px;
+        border: 0;
+        height: 54px;
+        padding: 15px;
+    }
+    
+    tr {
+        border-bottom: 1px solid #F3F3F5;
+    }
+    
+    tr:hover {
+        background-color: #F3F3F5;
+        cursor: pointer;
+    }
+    
+    .userPic {
+        margin-left: 8px
+    }
+    
+    .userPic p {
+        top: 20%;
+        right: 20%;
+        color: #fff;
+    }
+    
+    .ticket {
+        background-color: #8A74F91A;
+        padding: 6px;
+        border-radius: 8px;
+        margin-inline-end: 4px;
+        /* display: inline */
+    }
+    
+    .ticketFile {
+        text-align: start;
+    }
+    
+    .ticketFile p {
+        color: #00000066;
+        font-size: 10px;
+    }
+    
+    .phone {
+        color: #92A1AD;
+        font-size: 10px;
+    }
+    
+    .tooltip {
+        top: -10px;
+        left: -41px;
+        background-color: #000;
+        border-radius: 6.45px;
+        -webkit-border-radius: 6.45px;
+        -moz-border-radius: 6.45px;
+        -ms-border-radius: 6.45px;
+        -o-border-radius: 6.45px;
+        display: none;
+        opacity: 0;
+        transition: all .3s;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        -ms-transition: all .3s;
+        -o-transition: all .3s;
+    }
+    
+    .cinemasName:hover .tooltip {
+        display: block;
+        opacity: 1
+    }
+    
+    .tooltip::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #000 transparent transparent transparent;
+    }
+    
+    .tooltip div {
+        top: 4px;
+        color: #fff;
+        right: 23px;
+        font-size: 12px;
+        padding: 8px;
+    }
+    
+    .tableFooter {
+        top: 0;
+        width: 100%;
+    }
+    
+    ul {
+        list-style-type: none;
+        display: flex;
+    }
+    
+    ul li {
+        margin-left: 12px;
+        line-height: 27px;
+        width: 27px;
+        height: 27px;
+        border-radius: 4.5px;
+        -webkit-border-radius: 4.5px;
+        -moz-border-radius: 4.5px;
+        -ms-border-radius: 4.5px;
+        -o-border-radius: 4.5px;
+    }
+    
+    ul li:hover {
+        background-color: #b4a6f5;
+        color: #fff
+    }
+    
+    ul li:nth-of-type(2) {
+        background-color: #8A74F9;
+        color: #fff;
+    }
+    
+    @media (max-width: 500px) {
+        /***for mobile devices***/
+        .headBack {
+            height: 55px;
+        }
+        input {
+            width: 187px;
+            height: 30px;
+        }
+        .searchPart {
+            margin-bottom: 30px;
+        }
+        .searchPart h4 {
+            font-size: 12px;
+        }
+        .searchPart button {
+            width: 29px;
+            height: 29px;
+        }
+        .toggleSection {
+            align-items: end !important;
+        }
+        .toggle {
+            height: 14px;
+        }
+        .toggle:after {
+            height: 13px;
+            width: 13px;
+            top: .5px;
+        }
+        .toggleSection button {
+            padding: 6px;
+            font-size: 10px;
+        }
+        .toggleSection span {
+            margin-inline-end: 6px;
+            font-size: 12px;
+        }
+        td {
+            width: fit-content
+        }
+    }
+    
+    @media(max-width:1000px) {
+        /***for tablet devices***/
+        .headBack {
+            height: 51px;
+        }
+        td {
+            font-size: 12px;
+            padding: 10px
+        }
+    }

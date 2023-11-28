@@ -1,0 +1,90 @@
+.card {
+    background-color: #fff!important;
+    width: 839px;
+    padding: 19px 22px 0 22px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    margin-top: 13px;
+}
+
+select {
+    border: 0.81px #E8E8E8 solid;
+    background-color: #fafafa;
+    padding: 0 10px;
+    border-radius: 8.07px;
+    -webkit-border-radius: 8.07px;
+    -moz-border-radius: 8.07px;
+    -ms-border-radius: 8.07px;
+    -o-border-radius: 8.07px;
+}
+
+.chartPoint {
+    top: 27px;
+    left: 287px;
+    height: 170px;
+}
+
+.tooltip {
+    top: 20px;
+    left: 207px;
+    background-color: #000;
+    border-radius: 6.45px;
+    -webkit-border-radius: 6.45px;
+    -moz-border-radius: 6.45px;
+    -ms-border-radius: 6.45px;
+    -o-border-radius: 6.45px;
+    display: none;
+    opacity: 0;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+
+.tooltip::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #000 transparent transparent transparent;
+}
+
+.tooltip div {
+    top: 4px;
+    color: #fff;
+    right: 23px;
+    font-size: 12px;
+    padding: 8px;
+}
+
+.tooltip div p:last-of-type {
+    color: #8A74F9 !important;
+}
+
+.chartPoint:hover+.tooltip {
+    display: block;
+    opacity: 1;
+}
+
+@media (max-width: 500px) {
+    /***for mobile devices***/
+    .card {
+        width: 100%;
+        /* height: 100px; */
+    }
+    .chartPoint {
+        top: 28px;
+        left: 113px;
+        height: 149px;
+    }
+    .tooltip {
+        left: 33px;
+    }
+}

@@ -1,0 +1,158 @@
+    section a {
+        text-decoration: none;
+        height: fit-content;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+    }
+    
+    .wavyBackground {
+        --size: 50px;
+        --b: 1px;
+        --p: 25px;
+        --R: calc(55.9px + var(--b)/2);
+        --_g: #0000 calc(99% - var(--b)), #000 calc(101% - var(--b)) 99%, #0000 101%;
+        -webkit-mask: radial-gradient(var(--R) at left 50% bottom calc(-1*var(--p)), var(--_g)) calc(50% - 2*var(--size)) calc(50% - var(--size)/2 - var(--b)/2)/calc(4*var(--size)) calc(var(--size) + var(--b)), radial-gradient(var(--R) at left 50% top calc(-1*var(--p)), var(--_g)) 50% calc(50% + var(--size)/2 + var(--b)/2)/calc(4*var(--size)) calc(var(--size) + var(--b));
+        background: #3D405B29;
+        height: 300px;
+        transform: rotate(-162.36deg);
+        -webkit-transform: rotate(-162.36deg);
+        -moz-transform: rotate(-162.36deg);
+        -ms-transform: rotate(-162.36deg);
+        -o-transform: rotate(-162.36deg);
+    }
+    
+    .card {
+        width: 408px;
+        background-color: rgb(139, 117, 250);
+        /* background-color: radial-gradient(59.58px at 50% calc(100% + 51.00px), #3D405B29 calc(99% - .82px), #3D405B29 calc(101% - .82px) 99%, #3D405B29 101%) calc(50% - 60px) calc(50% - 15.41px + .5px)/120px 30.82px, radial-gradient(59.58px at 50% -51px, #3D405B29 calc(99% - .82px), #3D405B29 calc(101% - .82px) 99%, #3D405B29 101%) 50% calc(50% + 15.41px)/120px 30.82px; */
+        margin-top: 13px;
+        color: #fff;
+        text-align: center;
+        border-radius: 12.47px;
+        -webkit-border-radius: 12.47px;
+        -moz-border-radius: 12.47px;
+        -ms-border-radius: 12.47px;
+        -o-border-radius: 12.47px;
+        overflow: hidden;
+    }
+    
+    .dots .dot1 {
+        top: 3px;
+        left: -26px;
+    }
+    
+    .dots .dot2 {
+        top: 3px;
+        right: -26px;
+    }
+    
+    .dots div {
+        display: block;
+        content: "";
+        width: 24px;
+        height: 27px;
+        background-color: #C4C4C4;
+        border-radius: 12.5px;
+        -webkit-border-radius: 12.5px;
+        -moz-border-radius: 12.5px;
+        -ms-border-radius: 12.5px;
+        -o-border-radius: 12.5px;
+    }
+    
+    .cardHead {
+        padding: 26px 16px;
+        width: 100%;
+    }
+    
+    .cardFooter>div {
+        border-top: 2px dashed rgba(225, 255, 255, .4);
+        padding: 15px 27px 0px 32px;
+    }
+    
+    .deleteIcon {
+        top: 24px;
+        left: 30px
+    }
+    
+    .deleteIcon:hover+.tooltip {
+        display: block;
+        opacity: 1;
+    }
+    
+    .tooltip {
+        top: 53px;
+        left: 6px;
+        background-color: #000;
+        border-radius: 6.45px;
+        -webkit-border-radius: 6.45px;
+        -moz-border-radius: 6.45px;
+        -ms-border-radius: 6.45px;
+        -o-border-radius: 6.45px;
+        display: none;
+        opacity: 0;
+        transition: all .3s;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        -ms-transition: all .3s;
+        -o-transition: all .3s;
+    }
+    
+    .tooltip::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 100%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent #000 transparent;
+    }
+    
+    .tooltip div {
+        top: 4px;
+        color: #E5E5EF;
+        right: 23px;
+        font-size: 12px;
+        padding: 9px 22px;
+    }
+    
+    .cardLink {
+        width: 226px;
+        margin: 21px auto 11px;
+        border: 0.83px dotted #ddd;
+        padding: 16px 24px 17px 16px;
+        border-radius: 8.32px;
+        -webkit-border-radius: 8.32px;
+        -moz-border-radius: 8.32px;
+        -ms-border-radius: 8.32px;
+        -o-border-radius: 8.32px;
+        font-size: 13px;
+        font-weight: 500;
+    }
+    
+    .cardLink img {
+        width: 11.90px;
+        height: 14.14px;
+    }
+    
+    .cardFooter {
+        padding-top: 15px;
+    }
+    
+    .cardFooter a {
+        color: #fff;
+        border: 1px solid #fff;
+        margin-right: 17px;
+        padding: 4px 6px;
+    }
+    
+    @media (max-width: 500px) {
+        /***for mobile devices***/
+        .card {
+            /* width: 100%; */
+            width: 354px;
+        }
+    }
